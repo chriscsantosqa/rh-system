@@ -8,9 +8,27 @@ Tailwind CSS, componentes padrão shadcn/ui, Lucide Icons e Recharts.
 
 Pré-requisito: **Node.js 18.17+** (recomendado Node 20).
 
+### Execução simples no Windows
+
+Dê dois cliques no arquivo abaixo, localizado na raiz do projeto:
+
+```text
+INICIAR_SISTEMA.bat
+```
+
+Ele instala as dependências na primeira execução, inicia o servidor local e abre o navegador em **http://localhost:3000**.
+
+Para usuários não técnicos, siga o guia completo:
+
+```text
+GUIA_EXECUCAO_SISTEMA_RH.md
+```
+
+### Execução manual
+
 ```bash
 npm install
-npm run dev
+npm run dev:local
 ```
 
 Abra **http://localhost:3000**. Na primeira execução o banco é criado
