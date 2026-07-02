@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============ Tema (padrão shadcn/ui com primária índigo) ============ */
+@layer base {
+  :root {
+    --background: 240 10% 98.5%;
+    --foreground: 240 10% 8%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 8%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 8%;
+    --primary: 243 70% 56%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 240 5% 94%;
+    --secondary-foreground: 240 6% 12%;
+    --muted: 240 5% 94%;
+    --muted-foreground: 240 4% 44%;
+    --accent: 243 60% 96%;
+    --accent-foreground: 243 60% 35%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 240 6% 89%;
+    --input: 240 6% 86%;
+    --ring: 243 70% 56%;
+    --radius: 0.625rem;
+    --sidebar: 240 15% 9%;
+    /* cores para gráficos */
+    --chart-1: 243 70% 58%;
+    --chart-2: 172 60% 42%;
+    --chart-3: 32 95% 55%;
+    --chart-4: 340 70% 58%;
+    --chart-5: 200 80% 50%;
+  }
+
+  .dark {
+    --background: 240 12% 6.5%;
+    --foreground: 240 8% 94%;
+    --card: 240 10% 9.5%;
+    --card-foreground: 240 8% 94%;
+    --popover: 240 10% 9%;
+    --popover-foreground: 240 8% 94%;
+    --primary: 243 75% 65%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 240 6% 15%;
+    --secondary-foreground: 240 6% 90%;
+    --muted: 240 6% 15%;
+    --muted-foreground: 240 5% 62%;
+    --accent: 243 40% 18%;
+    --accent-foreground: 243 70% 82%;
+    --destructive: 0 65% 55%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 240 6% 17%;
+    --input: 240 6% 20%;
+    --ring: 243 75% 65%;
+    --sidebar: 240 14% 7%;
+    --chart-1: 243 75% 66%;
+    --chart-2: 172 55% 50%;
+    --chart-3: 32 90% 60%;
+    --chart-4: 340 70% 65%;
+    --chart-5: 200 80% 60%;
+  }
+}
+
+@layer base {
+  * { @apply border-border; }
+  body { @apply bg-background text-foreground antialiased; }
+}
+
+/* Barra de rolagem discreta */
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-thumb { @apply bg-muted-foreground/25 rounded-full; }
+::-webkit-scrollbar-thumb:hover { @apply bg-muted-foreground/40; }
+::-webkit-scrollbar-track { background: transparent; }
