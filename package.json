@@ -5,6 +5,7 @@
   "description": "Mini ERP de RH — Lupatelli & Enlace",
   "scripts": {
     "dev": "next dev",
+    "dev:local": "next dev -p 3000",
     "build": "next build",
     "start": "next start"
   },
